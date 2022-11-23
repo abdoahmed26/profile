@@ -452,6 +452,17 @@ nav div ul li a {
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
 }
+@media (min-width:315px) and (max-width:767px) {
+    .ski .my div.lls article {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+    }
+}
 .ski .my div article p {
     color: white;
 }
