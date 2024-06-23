@@ -22,6 +22,7 @@ import project21 from "../../Images/project21.png"
 import project22 from "../../Images/nextjs-todo.png"
 import project23 from "../../Images/nextjs-ecommerce.png"
 import project24 from "../../Images/Library.png"
+import project25 from "../../Images/Movies.png"
 
 export const arrayProjects = [
     {
@@ -99,7 +100,7 @@ export const arrayProjects = [
     {
         image:project10,
         title:"My tenth project",
-        desc:"an Educational Website",
+        desc:"Educational Website",
         skills:"HTML,CSS,JS",
         url:"https://abdoahmed26.github.io/project10/",
         data:"fade-right",
@@ -123,7 +124,7 @@ export const arrayProjects = [
     {
         image:project12,
         title:"My thirteen project",
-        desc:"an Agency",
+        desc:"An Agency",
         skills:"HTML,CSS,Bootstrap,JS",
         url:"https://abdoahmed26.github.io/project12/",
         data:"fade-right",
@@ -131,7 +132,7 @@ export const arrayProjects = [
     {
         image:project13,
         title:"My fourteen project",
-        desc:"a Twitter Clone",
+        desc:"Twitter Clone",
         skills:"HTML,CSS,Tailwind CSS",
         url:"https://abdoahmed26.github.io/project13/",
         data:"fade-up",
@@ -139,7 +140,7 @@ export const arrayProjects = [
     {
         image:project15,
         title:"My fiveteen project",
-        desc:"Small Businesses.",
+        desc:"Small Businesses",
         skills:"HTML,CSS,Tailwind CSS,JS",
         url:"https://abdoahmed26.github.io/project15/",
         data:"fade-down",
@@ -147,7 +148,7 @@ export const arrayProjects = [
     {
         image:project16,
         title:"My sixteen project",
-        desc:"Sample Portfolio.",
+        desc:"Sample Portfolio",
         skills:"React.js,Bootstrap",
         url:"https://abdoahmed26.github.io/project17/",
         data:"fade-right",
@@ -155,7 +156,7 @@ export const arrayProjects = [
     {
         image:project17,
         title:"My seventeenth project",
-        desc:"Theatre Booking System.",
+        desc:"Theatre Booking System",
         skills:"Angular,Bootstrap",
         url:"https://abdoahmed26.github.io/project16/",
         data:"fade-up",
@@ -163,7 +164,7 @@ export const arrayProjects = [
     {
         image:project18,
         title:"My eighteenth project",
-        desc:"CRUD APP For Users.",
+        desc:"CRUD APP For Users",
         skills:"React.js,Bootstrap",
         url:"https://abdoahmed26.github.io/project18/",
         data:"fade-down",
@@ -171,7 +172,7 @@ export const arrayProjects = [
     {
         image:project19,
         title:"My nineteenth project",
-        desc:"Coffee Shop.",
+        desc:"Coffee Shop",
         skills:"React.js,Tailwind CSS",
         url:"https://abdoahmed26.github.io/project19/",
         data:"fade-right",
@@ -179,7 +180,7 @@ export const arrayProjects = [
     {
         image:project20,
         title:"My twentieth project",
-        desc:"E-Commerce.",
+        desc:"E-Commerce",
         skills:"React.js,Tailwind CSS",
         url:"https://abdoahmed26.github.io/project20/",
         data:"fade-up",
@@ -187,7 +188,7 @@ export const arrayProjects = [
     {
         image:project21,
         title:"My twenty-one project",
-        desc:"Admin Page.",
+        desc:"Admin Page",
         skills:"React.js,Material UI,Tailwind CSS",
         url:"https://abdoahmed26.github.io/project21/",
         data:"fade-down",
@@ -195,7 +196,7 @@ export const arrayProjects = [
     {
         image:project22,
         title:"My twenty-two project",
-        desc:"Todo Page.",
+        desc:"FullStack Todo Page",
         skills:"Next.js, Prisma, Mongodb, Clerk",
         url:"https://fullstack-nextjs-todo.vercel.app/",
         data:"fade-right",
@@ -203,7 +204,7 @@ export const arrayProjects = [
     {
         image:project23,
         title:"My twenty-three project",
-        desc:"FullStack Ecommerce.",
+        desc:"FullStack E-Commerce",
         skills:"Next.js, Prisma, Mongodb, Stripe, Eamiljs",
         url:"https://next-js-e-commerce-two-blush.vercel.app/",
         data:"fade-up",
@@ -211,9 +212,17 @@ export const arrayProjects = [
     {
         image:project24,
         title:"My twenty-four project",
-        desc:"FullStack Library.",
+        desc:"FullStack Library",
         skills:"React.js, Node.js, Mongodb, Stripe, Eamiljs",
         url:"https://library-omega-nine.vercel.app/",
         data:"fade-down",
+    },
+    {
+        image:project25,
+        title:"My twenty-five project",
+        desc:"FullStack Movies",
+        skills:"Next.js, Prisma, Mongodb, Shadcn ui",
+        url:"https://next-js-movies-swart.vercel.app/",
+        data:"fade-right",
     },
 ]
