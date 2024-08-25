@@ -21,9 +21,9 @@ const Skills = () => {
                     <h1 className="text-5xl font-bold text-center text-lightcolor">My 
                         <span className="text-primarycolor"> Skills</span>
                     </h1>
-                    <div className="mt-8">
+                    <div className="py-6 mt-5 rounded-xl bg-bgcolor-2">
                         <div className='grid grid-cols-2 gap-10 sm:grid-cols-3 lg:grid-cols-4'>
-                            <SkillsCom data="fade-right" image={html} name={"HTML"} />
+                            <SkillsCom image={html} name={"HTML"} />
                             <SkillsCom image={css} name={"CSS"} />
                             <SkillsCom image={javascript} name={"JavaScript"} style={"rounded-xl"} />
                             <SkillsCom image={typescript} name={"TypeScript"} style={"rounded-xl"} />

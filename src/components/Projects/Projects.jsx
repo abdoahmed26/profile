@@ -1,9 +1,15 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import ProjectCom from "./ProjectCom";
 import { arrayProjects } from "./arrayProject";
 
 const Projects = () => {
-    const projects = arrayProjects;
+    const projects = useMemo(()=>{
+        let total = []
+        for(let i=arrayProjects.length-1;i>=0;i--){
+            total.push(arrayProjects[i])
+        }
+        return total;
+    },[]);
     const [search,setSearch] = useState("")
     return (
         <div id="Projects" className="flex justify-center py-14 bg-bgcolor-2">
@@ -14,19 +20,19 @@ const Projects = () => {
                     </h1>
                     <div className="flex flex-wrap justify-center gap-2 mt-5">
                         <button onClick={()=>setSearch("")} 
-                        className="p-1 px-3 bg-white rounded">
+                        className={`p-1 px-3 ${search==="" ? "bg-primarycolor text-white" : "bg-white text-black"} rounded`}>
                             All
                         </button>
-                        <button onClick={()=>setSearch("HTML")} className="p-1 px-3 bg-white rounded">
+                        <button onClick={()=>setSearch("HTML")} className={`${search==="HTML" ? "bg-primarycolor text-white" : "bg-white text-black"} p-1 px-3 rounded`}>
                             HTML & CSS
                         </button>
-                        <button onClick={()=>setSearch("JS")} className="p-1 px-3 bg-white rounded">
+                        <button onClick={()=>setSearch("JS")} className={`p-1 px-3 ${search==="JS" ? "bg-primarycolor text-white" : "bg-white text-black"} rounded`}>
                             JavaScript
                         </button>
-                        <button onClick={()=>setSearch("React")} className="p-1 px-3 bg-white rounded">
+                        <button onClick={()=>setSearch("React")} className={`p-1 px-3 ${search==="React" ? "bg-primarycolor text-white" : "bg-white text-black"} rounded`}>
                             React.js
                         </button>
-                        <button onClick={()=>setSearch("Next")} className="p-1 px-3 bg-white rounded">
+                        <button onClick={()=>setSearch("Next")} className={`p-1 px-3 ${search==="Next" ? "bg-primarycolor text-white" : "bg-white text-black"} rounded`}>
                             Next.js
                         </button>
                     </div>
