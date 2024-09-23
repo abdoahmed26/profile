@@ -11,7 +11,7 @@ const Services = () => {
                     </h1>
                     <div className="grid grid-cols-1 mt-6 gap-7 sm:grid-cols-2 lg:grid-cols-3">
                         <Card icon={<CodeXml size={70} className='font-bold text-primarycolor'/>}
-                            title={"Front End Development"} desc={"I can build website using modern frontend Development tools like React JS, Next JS, Angular."}/>
+                            title={"Front End Development"} desc={"I can build website using modern frontend Development tools like React JS, Next JS."}/>
                         <Card icon={<FileCode size={70} className='font-bold text-primarycolor'/>}
                         title={"Back End Development"} desc={"I can build register & login Page, Build databases, send mails."}/>
                         <Card icon={<Palette size={70} className='font-bold text-primarycolor'/>}

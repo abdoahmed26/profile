@@ -6,6 +6,7 @@ import linkedin from "../Images/download (1).png"
 import github from "../Images/github_icon.png"
 import Lottie from "lottie-react";
 import laptop from "../animation/Animation - 1716757935563.json"
+import { TypeAnimation } from "react-type-animation";
 
 const Body = () => {
     return (
@@ -18,7 +19,22 @@ const Body = () => {
                             <span className='text-primarycolor'> Ahmed</span>
                         </h1>
                         <h2 className='my-4 text-2xl font-bold text-lightcolor'>I'm a 
-                            <span className='text-primarycolor'> Frontend developer.</span>
+                            <span className='text-primarycolor'> 
+                            <TypeAnimation className="ml-1"
+                                sequence={[
+                                    'Full Stack Developer',
+                                    1000,
+                                    'Front-End Developer',
+                                    1000,
+                                    'Back-End Developer',
+                                    1000,
+                                ]}
+                                wrapper="span"
+                                speed={50}
+                                // style={{ fontSize: '24px', display: 'inline-block' }}
+                                repeat={Infinity}
+                                />
+                            </span>
                         </h2>
                         <div className='my-6'>
                             <a className='px-4 py-2 text-white border-2 rounded-full border-primarycolor bg-primarycolor hover:bg-bgcolor-1'

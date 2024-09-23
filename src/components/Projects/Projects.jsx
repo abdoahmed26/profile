@@ -35,6 +35,9 @@ const Projects = () => {
                         <button onClick={()=>setSearch("Next")} className={`p-1 px-3 ${search==="Next" ? "bg-primarycolor text-white" : "bg-white text-black"} rounded`}>
                             Next.js
                         </button>
+                        <button onClick={()=>setSearch("Node")} className={`p-1 px-3 ${search==="Node" ? "bg-primarycolor text-white" : "bg-white text-black"} rounded`}>
+                            Nodejs
+                        </button>
                     </div>
                     <div className="mt-8">
                         <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">

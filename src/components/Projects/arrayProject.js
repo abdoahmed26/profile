@@ -21,6 +21,8 @@ import project22 from "../../Images/nextjs-todo.png"
 import project23 from "../../Images/nextjs-ecommerce.png"
 import project24 from "../../Images/Library.png"
 import project25 from "../../Images/Movies.png"
+import project26 from "../../Images/Full Stack Chat App.png"
+import project27 from "../../Images/nodejs-ecommerce-website.png"
 
 export const arrayProjects = [
     {
@@ -206,5 +208,21 @@ export const arrayProjects = [
         skills:"Next.js, Prisma, MongoDB, Shadcn ui",
         url:"https://next-js-movies-swart.vercel.app/",
         data:"fade-right",
+    },
+    {
+        image:project27,
+        title:"My twenty-seven project",
+        desc:"Backend E-Commerce",
+        skills:"Node.js, Expressjs, MongoDB, JWT, Passportjs, Multer, Stripe, nodemailer",
+        url:"https://github.com/abdoahmed26/backend-e-commerce",
+        data:"fade-up",
+    },
+    {
+        image:project26,
+        title:"My twenty-six project",
+        desc:"FullStack Chat App",
+        skills:"React.js, Nodejs, Expressjs, MongoDB, JWT, Socket.io, Multer, nodemailer",
+        url:"https://chat-app-client-three-theta.vercel.app/",
+        data:"fade-down",
     },
 ]

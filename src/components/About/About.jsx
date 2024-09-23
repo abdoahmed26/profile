@@ -13,14 +13,20 @@ const About = () => {
                         <h1 className="text-5xl font-bold text-center md:text-start text-lightcolor">About 
                             <span className="text-primarycolor"> Me</span>
                         </h1>
-                        <h2 className="my-5 text-3xl font-bold text-lightcolor">Frontend 
+                        {/* <h2 className="my-5 text-3xl font-bold text-lightcolor">Full Stack 
                             <span className="text-primarycolor"> Developer</span>
-                        </h2>
+                        </h2> */}
                         <p className="text-seconderycolor">
-                            Iam a frontend web developer .I can provide clean code 
-                            and pixel perfect designer . I also make the website more & more
-                            interactive with web animations . A responsive design makes
-                            your webiste available on all devices .
+                            Abdulrahman Ahmed is a skilled full stack developer with experience in
+                            both front-end and back-end technologies. Proficient in languages
+                            such as JavaScript and frameworks like Reactjs and Nextjs, Abdulrahman specializes
+                            in building dynamic, user-friendly web applications. 
+                            With a deep understanding of database management, server-side logic,
+                            and modern front-end development, he ensures that both the design
+                            and functionality of his projects are seamless and efficient.
+                            Passionate about creating scalable solutions, Abdulrahman is
+                            committed to staying updated with the latest industry trends
+                            and delivering high-quality, performant software.
                         </p>
                     </div>
                 </div>
