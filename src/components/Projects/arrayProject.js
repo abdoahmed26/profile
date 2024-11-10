@@ -23,6 +23,7 @@ import project24 from "../../Images/Library.png"
 import project25 from "../../Images/Movies.png"
 import project26 from "../../Images/Full Stack Chat App.png"
 import project27 from "../../Images/nodejs-ecommerce-website.png"
+import project28 from "../../Images/socialMedia.png"
 
 export const arrayProjects = [
     {
@@ -224,5 +225,13 @@ export const arrayProjects = [
         skills:"React.js, Nodejs, Expressjs, MongoDB, JWT, Socket.io, Multer, nodemailer",
         url:"https://chat-app-client-three-theta.vercel.app/",
         data:"fade-down",
+    },
+    {
+        image:project28,
+        title:"My twenty-eight project",
+        desc:"Backend Social Media",
+        skills:"Nodejs, Expressjs, MongoDB, Express Validator, Bcrypt, JWT, Socket.io, ...",
+        url:"https://github.com/abdoahmed26/backend-social-media-app",
+        data:"fade-right",
     },
 ]
