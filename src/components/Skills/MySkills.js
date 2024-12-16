@@ -57,6 +57,10 @@ export const mySkills = [
         image:"https://skillicons.dev/icons?i=mongodb"
     },
     {
+        name:"PostgreSQL",
+        image:"https://skillicons.dev/icons?i=postgresql"
+    },
+    {
         name:"GitHub",
         image:"https://skillicons.dev/icons?i=github"
     },

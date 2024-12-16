@@ -24,6 +24,7 @@ import project25 from "../../Images/Movies.png"
 import project26 from "../../Images/Full Stack Chat App.png"
 import project27 from "../../Images/nodejs-ecommerce-website.png"
 import project28 from "../../Images/socialMedia.png"
+import project29 from "../../Images/restaurant.jpg"
 
 export const arrayProjects = [
     {
@@ -233,5 +234,13 @@ export const arrayProjects = [
         skills:"Nodejs, Expressjs, MongoDB, Express Validator, Bcrypt, JWT, Socket.io, ...",
         url:"https://github.com/abdoahmed26/backend-social-media-app",
         data:"fade-right",
+    },
+    {
+        image:project29,
+        title:"My twenty-nine project",
+        desc:"Backend Restaurant",
+        skills:"Nodejs, Expressjs, PostgreSQL, Cloudinary, Multer, Bcrypt, JWT, ...",
+        url:"https://github.com/abdoahmed26/Backend-Restaurant-API",
+        data:"fade-up",
     },
 ]
