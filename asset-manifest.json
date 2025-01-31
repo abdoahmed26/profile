@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.7243fdf5.css",
-    "main.js": "/static/js/main.a3766f68.js",
+    "main.js": "/static/js/main.c0ccfd81.js",
     "static/js/453.ed3810f9.chunk.js": "/static/js/453.ed3810f9.chunk.js",
     "static/media/project12.png": "/static/media/project12.04d6184a29efcb45b289.png",
     "static/media/project19.png": "/static/media/project19.6ca6612f24de64de1199.png",
@@ -12,7 +12,6 @@
     "static/media/project3.png": "/static/media/project3.e863884dedde5e1abe4e.png",
     "static/media/Full Stack Chat App.png": "/static/media/Full Stack Chat App.8b314002fec9d95643c8.png",
     "static/media/project5.png": "/static/media/project5.613beb69a524369e09fa.png",
-    "static/media/mycv.pdf": "/static/media/mycv.bc4aa4c9541ccba23ac5.pdf",
     "static/media/project8.png": "/static/media/project8.0a2a173418cb430cb731.png",
     "static/media/project4.png": "/static/media/project4.6ce556dab68a0f1f545c.png",
     "static/media/project20.png": "/static/media/project20.d066ecb63a6692a00bb3.png",
@@ -32,6 +31,7 @@
     "static/media/project13.png": "/static/media/project13.c26ce3b06b133b3c3d8f.png",
     "static/media/nodejs-ecommerce-website.png": "/static/media/nodejs-ecommerce-website.1a94311f18a1874c5d04.png",
     "static/media/project6.png": "/static/media/project6.345c0d9b236073cb3d55.png",
+    "static/media/mycv.pdf": "/static/media/mycv.8020477787527ff46b5a.pdf",
     "static/media/nextjs-todo.png": "/static/media/nextjs-todo.f7e6eeffcbe9dd2681e9.png",
     "static/media/project18.png": "/static/media/project18.af24230cf51322848eb3.png",
     "static/media/project15.png": "/static/media/project15.02b26cc343d84530a99f.png",
@@ -39,11 +39,11 @@
     "static/media/project7.png": "/static/media/project7.1b4937e62e8566e5108e.png",
     "index.html": "/index.html",
     "main.7243fdf5.css.map": "/static/css/main.7243fdf5.css.map",
-    "main.a3766f68.js.map": "/static/js/main.a3766f68.js.map",
+    "main.c0ccfd81.js.map": "/static/js/main.c0ccfd81.js.map",
     "453.ed3810f9.chunk.js.map": "/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7243fdf5.css",
-    "static/js/main.a3766f68.js"
+    "static/js/main.c0ccfd81.js"
   ]
 }
