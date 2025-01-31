@@ -224,7 +224,7 @@ export const arrayProjects = [
         title:"My twenty-six project",
         desc:"FullStack Chat App",
         skills:"React.js, Nodejs, Expressjs, MongoDB, JWT, Socket.io, Multer, nodemailer",
-        url:"https://chat-app-client-three-theta.vercel.app/",
+        url:"https://chat-app-client-alpha-rosy.vercel.app/",
         data:"fade-down",
     },
     {
