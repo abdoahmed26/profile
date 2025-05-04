@@ -24,6 +24,8 @@ const Body = () => {
                                 sequence={[
                                     'Full Stack Developer',
                                     1000,
+                                    'Mern Stack Developer',
+                                    1000,
                                     'Front-End Developer',
                                     1000,
                                     'Back-End Developer',
@@ -52,7 +54,7 @@ const Body = () => {
                             <a href="https://www.instagram.com/abdo26.6/" rel="noreferrer" target="_blank" >
                                 <img className="duration-300 w-7 h-7 hover:scale-125" src={instagram} alt="" />
                             </a>
-                            <a href="https://www.linkedin.com/in/abdo-ahmed-67185a28a" rel="noreferrer" target="_blank">
+                            <a href="https://linkedin.com/in/abdelrahman-ahmed-460873357" rel="noreferrer" target="_blank">
                                 <img className="duration-300 rounded w-7 h-7 hover:scale-125" src={linkedin} alt="" />
                             </a>
                             <a href="https://github.com/abdoahmed26" rel="noreferrer" target="_blank">

@@ -6,6 +6,7 @@ import respon from "../../Images/Cerfit/Responsive Web Design_certificate.jpg"
 import web from "../../Images/Cerfit/Web Development Fundamentals_certificate.jpg"
 import angular from "../../Images/Cerfit/Angular_certificate.jpg"
 import sql from "../../Images/Cerfit/SQL_certificate.jpg"
+import depi from "../../Images/Cerfit/DEPI.jpg"
 
 const Certificates = () => {
     return (
@@ -17,6 +18,7 @@ const Certificates = () => {
                     </h1>
                     <div className="mt-8">
                         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                            <CerCom image={depi} data="fade-up"/>
                             <CerCom image={html} data="fade-right"/>
                             <CerCom image={css} data="fade-up"/>
                             <CerCom image={respon} data="fade-down"/>

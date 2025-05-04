@@ -61,6 +61,10 @@ export const mySkills = [
         image:"https://skillicons.dev/icons?i=postgresql"
     },
     {
+        name:"Sequelize",
+        image:"https://skillicons.dev/icons?i=sequelize"
+    },
+    {
         name:"GitHub",
         image:"https://skillicons.dev/icons?i=github"
     },
