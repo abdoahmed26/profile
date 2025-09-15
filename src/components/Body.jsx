@@ -40,7 +40,7 @@ const Body = () => {
                         </h2>
                         <div className='my-6'>
                             <a className='px-4 py-2 text-white border-2 rounded-full border-primarycolor bg-primarycolor hover:bg-bgcolor-1'
-                            href={mycv} download>
+                            href={mycv} download="Abdulrahman_Ahmed_CV.pdf" >
                                 Download My CV
                             </a>
                         </div>

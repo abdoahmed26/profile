@@ -25,6 +25,7 @@ import project26 from "../../Images/Full Stack Chat App.png"
 import project27 from "../../Images/nodejs-ecommerce-website.png"
 import project28 from "../../Images/socialMedia.png"
 import project29 from "../../Images/restaurant.jpg"
+import project30 from "../../Images/paws.png"
 
 export const arrayProjects = [
     {
@@ -96,7 +97,7 @@ export const arrayProjects = [
         title:"My ninth project",
         desc:"Read And Listen Quran",
         skills:"HTML,CSS,JS",
-        url:"https://abdoahmed26.github.io/project9/",
+        url:"https://project9-mauve.vercel.app/",
         data:"fade-down",
     },
     {
@@ -242,5 +243,13 @@ export const arrayProjects = [
         skills:"Nodejs, Expressjs, PostgreSQL, Cloudinary, Multer, Bcrypt, JWT, ...",
         url:"https://github.com/abdoahmed26/Backend-Restaurant-API",
         data:"fade-up",
+    },
+    {
+        image:project30,
+        title:"My thirty project",
+        desc:"Backend Paws&Claws",
+        skills:"Nodejs, Expressjs, PostgreSQL, Sequelize, Cloudinary, Multer, Bcrypt, JWT, ...",
+        url:"https://paws-claws0.netlify.app",
+        data:"fade-down",
     },
 ]
