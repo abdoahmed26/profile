@@ -35,7 +35,7 @@ const ContactForm = () => {
                 name: name,
                 email: email,
                 message: message,
-                toEmail: "ba2662003@gmail.com",
+                toEmail: "abdulrahman.ahmed2623@gmail.com",
             }
             const serviceId = "service_uz24l7q"
             const templateId = "template_ssnr7il"
@@ -101,7 +101,7 @@ const ContactForm = () => {
                                     : 'border-transparent focus:border-primarycolor focus:shadow-lg focus:shadow-primarycolor/20'
                             }`}
                         />
-                        <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-primarycolor/0 to-primarycolor/0 group-focus-within:from-primarycolor/5 group-focus-within:to-transparent -z-10 transition-all duration-300"></div>
+                        <div className="absolute inset-0 transition-all duration-300 rounded-xl bg-gradient-to-r from-primarycolor/0 to-primarycolor/0 group-focus-within:from-primarycolor/5 group-focus-within:to-transparent -z-10"></div>
                     </div>
                     {checkName && (
                         <p className="flex items-center gap-1 text-sm text-red-500 animate-pulse">
@@ -132,7 +132,7 @@ const ContactForm = () => {
                                     : 'border-transparent focus:border-primarycolor focus:shadow-lg focus:shadow-primarycolor/20'
                             }`}
                         />
-                        <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-primarycolor/0 to-primarycolor/0 group-focus-within:from-primarycolor/5 group-focus-within:to-transparent -z-10 transition-all duration-300"></div>
+                        <div className="absolute inset-0 transition-all duration-300 rounded-xl bg-gradient-to-r from-primarycolor/0 to-primarycolor/0 group-focus-within:from-primarycolor/5 group-focus-within:to-transparent -z-10"></div>
                     </div>
                     {checkEmail && (
                         <p className="flex items-center gap-1 text-sm text-red-500 animate-pulse">
@@ -163,7 +163,7 @@ const ContactForm = () => {
                                     : 'border-transparent focus:border-primarycolor focus:shadow-lg focus:shadow-primarycolor/20'
                             }`}
                         />
-                        <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-primarycolor/0 to-primarycolor/0 group-focus-within:from-primarycolor/5 group-focus-within:to-transparent -z-10 transition-all duration-300"></div>
+                        <div className="absolute inset-0 transition-all duration-300 rounded-xl bg-gradient-to-r from-primarycolor/0 to-primarycolor/0 group-focus-within:from-primarycolor/5 group-focus-within:to-transparent -z-10"></div>
                     </div>
                     {checkMessage && (
                         <p className="flex items-center gap-1 text-sm text-red-500 animate-pulse">
@@ -176,7 +176,7 @@ const ContactForm = () => {
                 <button 
                     type="submit"
                     disabled={isLoading}
-                    className="group relative w-full sm:w-auto flex items-center justify-center gap-2 px-8 py-3 text-white font-semibold border-2 rounded-full border-primarycolor bg-primarycolor hover:bg-transparent transition-all duration-300 shadow-lg shadow-primarycolor/30 hover:shadow-primarycolor/50 disabled:opacity-50 disabled:cursor-not-allowed overflow-hidden"
+                    className="relative flex items-center justify-center w-full gap-2 px-8 py-3 overflow-hidden font-semibold text-white transition-all duration-300 border-2 rounded-full shadow-lg group sm:w-auto border-primarycolor bg-primarycolor hover:bg-transparent shadow-primarycolor/30 hover:shadow-primarycolor/50 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                     <span className="relative z-10 flex items-center gap-2">
                         {isLoading ? (
@@ -187,7 +187,7 @@ const ContactForm = () => {
                         ) : (
                             <>
                                 Send Message
-                                <Send size={20} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
+                                <Send size={20} className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
                             </>
                         )}
                     </span>
