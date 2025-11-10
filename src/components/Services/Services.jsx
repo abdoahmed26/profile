@@ -42,25 +42,51 @@ const Services = () => {
     ];
     
     return (
-        <div id="Services" className="flex justify-center py-14 bg-bgcolor-2">
-            <div className="container">
-                <div>
-                    <h1 className="text-5xl font-bold text-center text-lightcolor">Our 
+        <div id="Services" className="relative flex justify-center py-20 overflow-hidden bg-bgcolor-2">
+            {/* Background decorative elements */}
+            <div className="absolute top-1/4 left-10 w-64 h-64 bg-primarycolor/5 rounded-full blur-3xl"></div>
+            <div className="absolute bottom-1/4 right-10 w-80 h-80 bg-primarycolor/5 rounded-full blur-3xl"></div>
+            
+            <div className="container relative z-10">
+                {/* Section Header */}
+                <div className="mb-16 space-y-4 text-center">
+                    <h1 className="text-5xl font-bold sm:text-6xl text-lightcolor">
+                        My 
                         <span className="text-primarycolor"> Services</span>
                     </h1>
-                    <div className="grid grid-cols-1 mt-6 gap-7 sm:grid-cols-2 lg:grid-cols-3">
-                        {
-                            services.map((service, index) => (
-                                <Card key={index} icon={service.icon} title={service.title} desc={service.description} />
-                            ))
-                        }
-                        {/* <Card icon={<CodeXml size={50} className='font-bold text-primarycolor'/>}
-                            title={"Front End Development"} desc={"I can build website using modern frontend Development tools like React JS, Next JS."}/>
-                        <Card icon={<FileCode size={50} className='font-bold text-primarycolor'/>}
-                        title={"Back End Development"} desc={"I can build register & login Page, Build databases, send mails."}/>
-                        <Card icon={<Palette size={50} className='font-bold text-primarycolor'/>}
-                        title={"Responsive Design"} desc={"I can build responsive web design for all devices mobile , tablet and desktop."}/> */}
-                    </div>
+                    <p className="max-w-2xl mx-auto text-lg text-seconderycolor">
+                        Comprehensive full-stack development services to bring your ideas to life
+                    </p>
+                    <div className="w-24 h-1 mx-auto bg-gradient-to-r from-transparent via-primarycolor to-transparent"></div>
+                </div>
+
+                {/* Services Grid */}
+                <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                    {
+                        services.map((service, index) => (
+                            <Card 
+                                key={index} 
+                                icon={service.icon} 
+                                title={service.title} 
+                                desc={service.description}
+                                index={index}
+                            />
+                        ))
+                    }
+                </div>
+
+                {/* Bottom CTA */}
+                <div className="mt-16 text-center">
+                    <p className="mb-4 text-seconderycolor">
+                        Ready to start your project?
+                    </p>
+                    <a 
+                        href="#Contact"
+                        className="inline-flex items-center gap-2 px-6 py-3 text-white transition-all duration-300 border-2 rounded-full border-primarycolor bg-primarycolor hover:bg-transparent hover:shadow-lg hover:shadow-primarycolor/30"
+                    >
+                        Get in Touch
+                        <Rocket size={20} />
+                    </a>
                 </div>
             </div>
         </div>

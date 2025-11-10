@@ -1,90 +1,199 @@
-import { Send } from "lucide-react";
+import { Send, User, Mail, MessageSquare, Loader2 } from "lucide-react";
 import { useState } from "react";
 import emailjs from "@emailjs/browser"
 import Swal from "sweetalert2";
 
 const ContactForm = () => {
-    const [name,setName] = useState("");
-    const [email,setEmail] = useState("");
-    const [message,setMessage] = useState("");
-    const [checkName,setCheckName] = useState(false);
-    const [checkEmail,setCheckEmail] = useState(false);
-    const [checkMessage,setCheckMessage] = useState(false);
-    const submit = (e)=>{
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+    const [checkName, setCheckName] = useState(false);
+    const [checkEmail, setCheckEmail] = useState(false);
+    const [checkMessage, setCheckMessage] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
+    
+    const submit = (e) => {
         e.preventDefault()
+        let hasError = false;
+        
         if(!name.length > 0){
             setCheckName(true)
+            hasError = true;
         }
         if(!email.length > 0){
             setCheckEmail(true)
+            hasError = true;
         }
         if(!message.length > 0){
             setCheckMessage(true)
+            hasError = true;
         }
-        else{
+        
+        if (!hasError) {
+            setIsLoading(true);
             const data = {
-                name:name,
-                email:email,
-                message:message,
-                toEmail:"ba2662003@gmail.com",
+                name: name,
+                email: email,
+                message: message,
+                toEmail: "ba2662003@gmail.com",
             }
-            const serviceId ="service_uz24l7q"
-            const templateId ="template_ssnr7il"
-            const publicKey ="3Pv6K4jZe4Au0HUkA"
-            emailjs.send(serviceId,templateId,data,publicKey)
-            .then(res=>{
-                if(res.status===200){
+            const serviceId = "service_uz24l7q"
+            const templateId = "template_ssnr7il"
+            const publicKey = "3Pv6K4jZe4Au0HUkA"
+            
+            emailjs.send(serviceId, templateId, data, publicKey)
+            .then(res => {
+                if(res.status === 200){
                     Swal.fire({
                         title: "Successfully!",
                         text: "Your message has been sent successfully!!",
-                        icon: "success"
+                        icon: "success",
+                        confirmButtonColor: "#3B82F6"
                     });
-                }
-                else{
+                } else {
                     Swal.fire({
                         title: "Error!",
-                        text: "Your Message don't send!",
-                        icon: "error"
+                        text: "Your Message couldn't be sent!",
+                        icon: "error",
+                        confirmButtonColor: "#3B82F6"
                     });
                 }
-            }).finally(()=>{
+            })
+            .catch(() => {
+                Swal.fire({
+                    title: "Error!",
+                    text: "Something went wrong. Please try again!",
+                    icon: "error",
+                    confirmButtonColor: "#3B82F6"
+                });
+            })
+            .finally(() => {
                 setName("")
                 setEmail("")
                 setMessage("")
+                setIsLoading(false);
             })
         }
     }
+    
     return (
-        <div>
-            <form action="" onSubmit={(e)=>submit(e)}>
-                <div className="mb-2">
-                    <input type="text" name="name" value={name} onInput={(e)=>{
-                        setName(e.target.value)
-                        e.target.value.length > 0 ? setCheckName(false) : setCheckName(true)
-                    }} placeholder="Your Name"
-                    className="w-full h-12 p-4 rounded-lg outline-none caret-primarycolor text-primarycolor bg-bgcolor-2 placeholder:text-gray-500"/>
-                    {checkName && <p className="text-red-500 animate-bounce">Your Name is required</p>}
+        <div className="w-full">
+            <form onSubmit={(e) => submit(e)} className="space-y-6">
+                {/* Name Input */}
+                <div className="space-y-2">
+                    <label className="flex items-center gap-2 text-sm font-semibold text-lightcolor">
+                        <User size={16} className="text-primarycolor" />
+                        Your Name
+                    </label>
+                    <div className="relative group">
+                        <input 
+                            type="text" 
+                            name="name" 
+                            value={name} 
+                            onInput={(e) => {
+                                setName(e.target.value)
+                                e.target.value.length > 0 ? setCheckName(false) : setCheckName(true)
+                            }} 
+                            placeholder="John Doe"
+                            className={`w-full h-12 px-4 rounded-xl outline-none caret-primarycolor text-lightcolor bg-bgcolor-2 placeholder:text-gray-500 border-2 transition-all duration-300 ${
+                                checkName 
+                                    ? 'border-red-500 focus:border-red-500' 
+                                    : 'border-transparent focus:border-primarycolor focus:shadow-lg focus:shadow-primarycolor/20'
+                            }`}
+                        />
+                        <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-primarycolor/0 to-primarycolor/0 group-focus-within:from-primarycolor/5 group-focus-within:to-transparent -z-10 transition-all duration-300"></div>
+                    </div>
+                    {checkName && (
+                        <p className="flex items-center gap-1 text-sm text-red-500 animate-pulse">
+                            <span>⚠️</span> Your Name is required
+                        </p>
+                    )}
                 </div>
-                <div className="mb-2">
-                    <input type="email" name="email" value={email} onInput={(e)=>{
-                        setEmail(e.target.value)
-                        e.target.value.length > 0 ? setCheckEmail(false) : setCheckEmail(true)
-                    }} placeholder="Your Email"
-                    className="w-full h-12 p-4 rounded-lg outline-none caret-primarycolor text-primarycolor bg-bgcolor-2 placeholder:text-gray-500"/>
-                    {checkEmail && <p className="text-red-500 animate-bounce">Your Eamil is required</p>}
+
+                {/* Email Input */}
+                <div className="space-y-2">
+                    <label className="flex items-center gap-2 text-sm font-semibold text-lightcolor">
+                        <Mail size={16} className="text-primarycolor" />
+                        Your Email
+                    </label>
+                    <div className="relative group">
+                        <input 
+                            type="email" 
+                            name="email" 
+                            value={email} 
+                            onInput={(e) => {
+                                setEmail(e.target.value)
+                                e.target.value.length > 0 ? setCheckEmail(false) : setCheckEmail(true)
+                            }} 
+                            placeholder="john@example.com"
+                            className={`w-full h-12 px-4 rounded-xl outline-none caret-primarycolor text-lightcolor bg-bgcolor-2 placeholder:text-gray-500 border-2 transition-all duration-300 ${
+                                checkEmail 
+                                    ? 'border-red-500 focus:border-red-500' 
+                                    : 'border-transparent focus:border-primarycolor focus:shadow-lg focus:shadow-primarycolor/20'
+                            }`}
+                        />
+                        <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-primarycolor/0 to-primarycolor/0 group-focus-within:from-primarycolor/5 group-focus-within:to-transparent -z-10 transition-all duration-300"></div>
+                    </div>
+                    {checkEmail && (
+                        <p className="flex items-center gap-1 text-sm text-red-500 animate-pulse">
+                            <span>⚠️</span> Your Email is required
+                        </p>
+                    )}
                 </div>
-                <div className="mb-2">
-                    <textarea name="message" value={message} onInput={(e)=>{
-                        setMessage(e.target.value)
-                        e.target.value.length > 0 ? setCheckMessage(false) : setCheckMessage(true)
-                    }} placeholder="Your Message"
-                    className="w-full h-40 p-4 rounded-lg outline-none resize-none caret-primarycolor text-primarycolor bg-bgcolor-2 placeholder:text-gray-500"/>
-                    {checkMessage && <p className="text-red-500 animate-bounce">Your Message is required</p>}
+
+                {/* Message Textarea */}
+                <div className="space-y-2">
+                    <label className="flex items-center gap-2 text-sm font-semibold text-lightcolor">
+                        <MessageSquare size={16} className="text-primarycolor" />
+                        Your Message
+                    </label>
+                    <div className="relative group">
+                        <textarea 
+                            name="message" 
+                            value={message} 
+                            onInput={(e) => {
+                                setMessage(e.target.value)
+                                e.target.value.length > 0 ? setCheckMessage(false) : setCheckMessage(true)
+                            }} 
+                            placeholder="Tell me about your project..."
+                            rows="5"
+                            className={`w-full p-4 rounded-xl outline-none resize-none caret-primarycolor text-lightcolor bg-bgcolor-2 placeholder:text-gray-500 border-2 transition-all duration-300 ${
+                                checkMessage 
+                                    ? 'border-red-500 focus:border-red-500' 
+                                    : 'border-transparent focus:border-primarycolor focus:shadow-lg focus:shadow-primarycolor/20'
+                            }`}
+                        />
+                        <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-primarycolor/0 to-primarycolor/0 group-focus-within:from-primarycolor/5 group-focus-within:to-transparent -z-10 transition-all duration-300"></div>
+                    </div>
+                    {checkMessage && (
+                        <p className="flex items-center gap-1 text-sm text-red-500 animate-pulse">
+                            <span>⚠️</span> Your Message is required
+                        </p>
+                    )}
                 </div>
-                <button type="submit"
-                className="flex items-center gap-2 p-1 px-3 text-white duration-300 border-2 rounded-full border-primarycolor bg-primarycolor hover:bg-bgcolor-1">
-                    Send
-                    <Send size={20} className='font-bold text-white'/>
+
+                {/* Submit Button */}
+                <button 
+                    type="submit"
+                    disabled={isLoading}
+                    className="group relative w-full sm:w-auto flex items-center justify-center gap-2 px-8 py-3 text-white font-semibold border-2 rounded-full border-primarycolor bg-primarycolor hover:bg-transparent transition-all duration-300 shadow-lg shadow-primarycolor/30 hover:shadow-primarycolor/50 disabled:opacity-50 disabled:cursor-not-allowed overflow-hidden"
+                >
+                    <span className="relative z-10 flex items-center gap-2">
+                        {isLoading ? (
+                            <>
+                                <Loader2 size={20} className="animate-spin" />
+                                Sending...
+                            </>
+                        ) : (
+                            <>
+                                Send Message
+                                <Send size={20} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
+                            </>
+                        )}
+                    </span>
+                    {!isLoading && (
+                        <div className="absolute inset-0 bg-gradient-to-r from-primarycolor/0 via-white/20 to-primarycolor/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
+                    )}
                 </button>
             </form>
         </div>

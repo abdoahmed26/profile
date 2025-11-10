@@ -1,4 +1,5 @@
 import './App.css';
+import { ThemeProvider } from './context/ThemeContext';
 import About from './components/About/About';
 import Body from './components/Body';
 import Certificates from './components/Certificates/Certificates';
@@ -12,18 +13,20 @@ import UpButton from './components/UpButton';
 
 function App() {
   return (
-    <div>
-      <Header/>
-      <Body/>
-      <Services/>
-      <Skills/>
-      <Projects/>
-      <Certificates/>
-      <About/>
-      <Contact/>
-      <Footer/>
-      <UpButton/>
-    </div>
+    <ThemeProvider>
+      <div className="bg-bgcolor-1 transition-colors duration-300">
+        <Header/>
+        <Body/>
+        <Services/>
+        <Skills/>
+        <Projects/>
+        <Certificates/>
+        <About/>
+        <Contact/>
+        <Footer/>
+        <UpButton/>
+      </div>
+    </ThemeProvider>
   );
 }
 
