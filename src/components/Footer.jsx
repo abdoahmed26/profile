@@ -22,7 +22,7 @@ const Footer = () => {
     const socialLinks = [
         { icon: <Github size={20} />, href: "https://github.com/abdoahmed26", label: "GitHub" },
         { icon: <Linkedin size={20} />, href: "https://linkedin.com/in/abdelrahman-ahmed-460873357", label: "LinkedIn" },
-        { icon: <Mail size={20} />, href: "mailto:ba2662003@gmail.com", label: "Email" }
+        { icon: <Mail size={20} />, href: "mailto:abdulrahman.ahmed2623@gmail.com", label: "Email" }
     ];
 
     return (
@@ -84,8 +84,8 @@ const Footer = () => {
                         <div className="space-y-3 text-seconderycolor">
                             <p className="flex items-start gap-2">
                                 <Mail size={20} className="flex-shrink-0 mt-1 text-primarycolor" />
-                                <a href="mailto:ba2662003@gmail.com" className="hover:text-primarycolor transition-colors">
-                                    ba2662003@gmail.com
+                                <a href="mailto:abdulrahman.ahmed2623@gmail.com" className="hover:text-primarycolor transition-colors">
+                                    abdulrahman.ahmed2623@gmail.com
                                 </a>
                             </p>
                             <p className="leading-relaxed">

@@ -49,7 +49,7 @@ const CerCom = ({image, data}) => {
             {/* Modal for Full View */}
             {isModalOpen && (
                 <div 
-                    className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/90 backdrop-blur-sm animate-fadeIn"
+                    className="fixed top-10 inset-0 z-50 flex items-center justify-center p-4 bg-black/90 backdrop-blur-sm animate-fadeIn"
                     onClick={() => setIsModalOpen(false)}
                 >
                     <div className="relative max-w-5xl w-full max-h-[90vh] overflow-auto">
