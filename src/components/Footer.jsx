@@ -13,6 +13,7 @@ const Footer = () => {
     const quickLinks = [
         { name: "Home", href: "#" },
         { name: "About", href: "#About" },
+        { name: "Experience", href: "#Experience" },
         { name: "Skills", href: "#Skills" },
         { name: "Services", href: "#Services" },
         { name: "Projects", href: "#Projects" },
@@ -26,7 +27,7 @@ const Footer = () => {
     ];
 
     return (
-        <footer className="relative bg-bgcolor-2 border-t border-lightcolor/10">
+        <footer className="relative bg-bgcolor-1 border-t border-lightcolor/10">
             {/* Decorative Top Border */}
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primarycolor to-transparent"></div>
             

@@ -7,10 +7,10 @@ const LargeNav = () => {
     const navLinks = [
         { name: "Home", href: "#" },
         { name: "About", href: "#About" },
+        { name: "Experience", href: "#Experience" },
         { name: "Skills", href: "#Skills" },
         { name: "Services", href: "#Services" },
         { name: "Projects", href: "#Projects" },
-        { name: "Certificates", href: "#Certificates" },
         { name: "Contact", href: "#Contact" }
     ];
 

@@ -26,7 +26,7 @@ const Contact = () => {
     ];
 
     return (
-        <div id="Contact" className="relative flex justify-center py-20 overflow-hidden bg-bgcolor-1">
+        <div id="Contact" className="relative flex justify-center py-20 overflow-hidden bg-bgcolor-2">
             {/* Background Elements */}
             <div className="absolute top-20 right-10 w-72 h-72 bg-primarycolor/5 rounded-full blur-3xl"></div>
             <div className="absolute bottom-20 left-10 w-96 h-96 bg-primarycolor/5 rounded-full blur-3xl"></div>
@@ -47,7 +47,7 @@ const Contact = () => {
                 <div className="flex flex-col gap-12 lg:flex-row lg:gap-16">
                     {/* Left Side - Form */}
                     <div className="flex-1">
-                        <div className="p-8 rounded-2xl bg-bgcolor-2/50 backdrop-blur-sm border border-lightcolor/5 shadow-xl">
+                        <div className="p-8 rounded-2xl bg-bgcolor-1/50 backdrop-blur-sm border border-lightcolor/5 shadow-xl">
                             <h2 className="mb-6 text-2xl font-bold text-lightcolor">
                                 Send Me a Message 💬
                             </h2>
@@ -73,7 +73,7 @@ const Contact = () => {
                             {contactInfo.map((info, index) => (
                                 <div 
                                     key={index}
-                                    className="group p-4 rounded-xl bg-bgcolor-2 border border-transparent hover:border-primarycolor/30 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primarycolor/20"
+                                    className="group p-4 rounded-xl bg-bgcolor-1 border border-transparent hover:border-primarycolor/30 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primarycolor/20"
                                 >
                                     {info.link ? (
                                         <a href={info.link} className="flex items-center gap-4">

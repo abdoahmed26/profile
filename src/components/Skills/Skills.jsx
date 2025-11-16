@@ -11,7 +11,7 @@ const Skills = () => {
     ];
 
     return (
-        <div id="Skills" className="relative flex justify-center py-20 overflow-hidden bg-bgcolor-1">
+        <div id="Skills" className="relative flex justify-center py-20 overflow-hidden bg-bgcolor-2">
             {/* Animated background elements */}
             <div className="absolute rounded-full top-20 left-10 w-72 h-72 bg-primarycolor/5 blur-3xl animate-pulse"></div>
             <div className="absolute delay-700 rounded-full bottom-20 right-10 w-96 h-96 bg-primarycolor/5 blur-3xl animate-pulse"></div>

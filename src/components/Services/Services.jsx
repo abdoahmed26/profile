@@ -42,7 +42,7 @@ const Services = () => {
     ];
     
     return (
-        <div id="Services" className="relative flex justify-center py-20 overflow-hidden bg-bgcolor-2">
+        <div id="Services" className="relative flex justify-center py-20 overflow-hidden bg-bgcolor-1">
             {/* Background decorative elements */}
             <div className="absolute top-1/4 left-10 w-64 h-64 bg-primarycolor/5 rounded-full blur-3xl"></div>
             <div className="absolute bottom-1/4 right-10 w-80 h-80 bg-primarycolor/5 rounded-full blur-3xl"></div>

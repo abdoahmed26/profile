@@ -1,7 +1,7 @@
 const Card = ({icon, title, desc, index}) => {
     return (
         <div 
-            className='group relative p-8 text-center rounded-2xl bg-bgcolor-1 border-2 border-transparent hover:border-primarycolor/30 transition-all duration-500 hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primarycolor/20 overflow-hidden'
+            className='group relative p-8 text-center rounded-2xl bg-bgcolor-2 border-2 border-transparent hover:border-primarycolor/30 transition-all duration-500 hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primarycolor/20 overflow-hidden'
             style={{ animationDelay: `${index * 100}ms` }}
         >
             {/* Animated background gradient */}

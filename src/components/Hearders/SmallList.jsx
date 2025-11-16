@@ -5,10 +5,10 @@ const SmallList = ({isOpen, onClose}) => {
     const navLinks = [
         { name: "Home", href: "#", icon: <Home size={18} /> },
         { name: "About", href: "#About", icon: <User size={18} /> },
+        { name: "Experience", href: "#Experience", icon: <Briefcase size={18} /> },
         { name: "Skills", href: "#Skills", icon: <Code size={18} /> },
         { name: "Services", href: "#Services", icon: <Briefcase size={18} /> },
         { name: "Projects", href: "#Projects", icon: <FolderGit2 size={18} /> },
-        { name: "Certificates", href: "#Certificates", icon: <Award size={18} /> },
         { name: "Contact", href: "#Contact", icon: <Mail size={18} /> }
     ];
 
