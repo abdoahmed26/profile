@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Theme Variables */
+:root {
+  --primary: #10b981;
+  --secondary: #fbbf24;
+  --third: #f97316;
+}
+
+/* Dark Theme (Default) */
+.dark {
+  --bg-1: #171a1c;
+  --bg-2: #22282a;
+  --text-light: #ffffff;
+  --text-secondary: #b0b0b0;
+}
+
+/* Light Theme */
+.light {
+  --bg-1: #ffffff;
+  --bg-2: #f5f5f5;
+  --text-light: #1a1a1a;
+  --text-secondary: #666666;
+}
+
+/* Apply theme colors */
+.light .bg-bgcolor-1 {
+  background-color: #ffffff !important;
+}
+
+.light .bg-bgcolor-2 {
+  background-color: #f8f9fa !important;
+}
+
+.light .text-lightcolor {
+  color: #1a1a1a !important;
+}
+
+.light .text-seconderycolor {
+  color: #666666 !important;
+}
+
+/* Light mode border adjustments */
+.light .border-lightcolor\/5 {
+  border-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+.light .border-lightcolor\/10 {
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.light .border-lightcolor\/20 {
+  border-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+.light .border-lightcolor\/30 {
+  border-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Light mode shadows */
+.light .shadow-xl,
+.light .shadow-2xl {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+/* Light mode specific hover effects */
+.light .hover\:bg-primarycolor\/10:hover {
+  background-color: rgba(16, 185, 129, 0.15) !important;
+}
+
+.light .hover\:bg-primarycolor\/5:hover {
+  background-color: rgba(16, 185, 129, 0.08) !important;
+}
+
+.light .bg-primarycolor\/10 {
+  background-color: rgba(16, 185, 129, 0.12) !important;
+}
+
+.light .bg-primarycolor\/20 {
+  background-color: rgba(16, 185, 129, 0.2) !important;
+}
+
+/* Light mode button improvements */
+.light button.bg-primarycolor:hover,
+.light a.bg-primarycolor:hover {
+  background-color: #059669 !important;
+}
+
+/* Light mode header shadow */
+.light header.shadow-xl {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+}
+
+/* Light mode backdrop blur backgrounds */
+.light .bg-bgcolor-2\/95 {
+  background-color: rgba(248, 249, 250, 0.98) !important;
+}
+
+.light .bg-bgcolor-1\/95 {
+  background-color: rgba(255, 255, 255, 0.98) !important;
+}
+
+/* Smooth transitions for theme changes */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+* {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+
+/* Prevent transition on page load */
+.preload * {
+  transition: none !important;
+}
