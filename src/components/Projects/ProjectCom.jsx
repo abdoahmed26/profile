@@ -25,6 +25,7 @@ const ProjectCom = ({
           src={image}
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
           alt={desc}
+          loading="lazy"
         />
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-bgcolor-1 via-transparent to-transparent opacity-60"></div>

@@ -20,6 +20,7 @@ const CerCom = ({image, data}) => {
                     <img 
                         src={image} 
                         alt="Certificate" 
+                        loading='lazy'
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     

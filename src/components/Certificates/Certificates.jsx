@@ -1,12 +1,12 @@
 import CerCom from "./CerCom";
-import html from "../../Images/Cerfit/HTML_certificate.jpg"
-import css from "../../Images/Cerfit/CSS_certificate.jpg"
-import js from "../../Images/Cerfit/JavaScript Intermediate_certificate.jpg"
-import respon from "../../Images/Cerfit/Responsive Web Design_certificate.jpg"
-import web from "../../Images/Cerfit/Web Development Fundamentals_certificate.jpg"
-import angular from "../../Images/Cerfit/Angular_certificate.jpg"
-import sql from "../../Images/Cerfit/SQL_certificate.jpg"
-import depi from "../../Images/Cerfit/DEPI.jpg"
+import html from "../../Images/Cerfit/HTML_certificate.webp"
+import css from "../../Images/Cerfit/CSS_certificate.webp"
+import js from "../../Images/Cerfit/JavaScript Intermediate_certificate.webp"
+import respon from "../../Images/Cerfit/Responsive Web Design_certificate.webp"
+import web from "../../Images/Cerfit/Web Development Fundamentals_certificate.webp"
+import angular from "../../Images/Cerfit/Angular_certificate.webp"
+import sql from "../../Images/Cerfit/SQL_certificate.webp"
+import depi from "../../Images/Cerfit/DEPI.webp"
 import { Award, GraduationCap } from "lucide-react";
 
 const Certificates = () => {

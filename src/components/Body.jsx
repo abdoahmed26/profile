@@ -1,9 +1,9 @@
 import mycv from "../Images/mycv.pdf";
-import facebook from "../Images/facebook_lcon.png"
-import whatsApp from "../Images/download (1).jpg"
-import instagram from "../Images/instgram-icon.png"
-import linkedin from "../Images/download (1).png"
-import github from "../Images/github_icon.png"
+import facebook from "../Images/facebook_lcon.webp"
+import whatsApp from "../Images/whatsapp.webp"
+import instagram from "../Images/instgram-icon.webp"
+import linkedin from "../Images/linkedin.webp"
+import github from "../Images/github_icon.webp"
 import Lottie from "lottie-react";
 import laptop from "../animation/Animation - 1716757935563.json"
 import { TypeAnimation } from "react-type-animation";

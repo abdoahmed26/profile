@@ -1,32 +1,33 @@
-import project1 from "../../Images/project1.png"
-import project2 from "../../Images/project2.png"
-import project3 from "../../Images/project3.png"
-import project4 from "../../Images/project4.png"
-import project5 from "../../Images/project5.png"
-import project6 from "../../Images/project6.png"
-import project7 from "../../Images/project7.png"
-import project8 from "../../Images/project8.png"
-import project9 from "../../Images/project9.png"
-import project10 from "../../Images/project10.png"
-import project11 from "../../Images/project11.png"
-import project12 from "../../Images/project12.png"
-import project13 from "../../Images/project13.png"
-import project15 from "../../Images/project15.png"
-import project17 from "../../Images/project17.png"
-import project18 from "../../Images/project18.png"
-import project19 from "../../Images/project19.png"
-import project20 from "../../Images/project20.png"
-import project21 from "../../Images/project21.png"
-import project22 from "../../Images/nextjs-todo.png"
-import project23 from "../../Images/nextjs-ecommerce.png"
-import project24 from "../../Images/Library.png"
-import project25 from "../../Images/Movies.png"
-import project26 from "../../Images/Full Stack Chat App.png"
-import project27 from "../../Images/nodejs-ecommerce-website.png"
-import project28 from "../../Images/socialMedia.png"
-import project29 from "../../Images/restaurant.jpg"
-import project30 from "../../Images/paws.png"
-import project31 from "../../Images/ecommerce.png"
+import project1 from "../../Images/project1.webp"
+import project2 from "../../Images/project2.webp"
+import project3 from "../../Images/project3.webp"
+import project4 from "../../Images/project4.webp"
+import project5 from "../../Images/project5.webp"
+import project6 from "../../Images/project6.webp"
+import project7 from "../../Images/project7.webp"
+import project8 from "../../Images/project8.webp"
+import project9 from "../../Images/project9.webp"
+import project10 from "../../Images/project10.webp"
+import project11 from "../../Images/project11.webp"
+import project12 from "../../Images/project12.webp"
+import project13 from "../../Images/project13.webp"
+import project15 from "../../Images/project15.webp"
+import project17 from "../../Images/project17.webp"
+import project18 from "../../Images/project18.webp"
+import project19 from "../../Images/project19.webp"
+import project20 from "../../Images/project20.webp"
+import project21 from "../../Images/project21.webp"
+import project22 from "../../Images/nextjs-todo.webp"
+import project23 from "../../Images/nextjs-ecommerce.webp"
+import project24 from "../../Images/Library.webp"
+import project25 from "../../Images/Movies.webp"
+import project26 from "../../Images/Full Stack Chat App.webp"
+import project27 from "../../Images/nodejs-ecommerce-website.webp"
+import project28 from "../../Images/socialMedia.webp"
+import project29 from "../../Images/restaurant.webp"
+import project30 from "../../Images/paws.webp"
+import project31 from "../../Images/ecommerce.webp"
+import project32 from "../../Images/skillforge.webp"
 
 export const arrayProjects = [
     {
@@ -285,5 +286,14 @@ export const arrayProjects = [
         skills:"Nest.js, MySQL, TypeOrm, Cloudinary, Multer, Bcrypt, JWT, ...",
         git:"https://github.com/abdoahmed26/nestjs_e-commerce",
         data:"fade-right",
+    },
+    {
+        image:project32,
+        title:"My thirty-two project",
+        desc:"FullStack Skillforge",
+        skills:"React.js, Nest.js, PostgreSQL, TypeOrm, Socket.io, Cron, ...",
+        url:"https://skill-forge-client.vercel.app/",
+        git:"https://github.com/abdoahmed26/SkillForge-Server",
+        data:"fade-up",
     },
 ]

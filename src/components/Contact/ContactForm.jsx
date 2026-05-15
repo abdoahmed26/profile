@@ -35,11 +35,11 @@ const ContactForm = () => {
                 name: name,
                 email: email,
                 message: message,
-                toEmail: "abdulrahman.ahmed2623@gmail.com",
+                toEmail: process.env.REACT_APP_EMAIL,
             }
-            const serviceId = "service_uz24l7q"
-            const templateId = "template_ssnr7il"
-            const publicKey = "3Pv6K4jZe4Au0HUkA"
+            const serviceId = process.env.REACT_APP_SERVICE_ID
+            const templateId = process.env.REACT_APP_TEMPLATE_ID
+            const publicKey = process.env.REACT_APP_PUBLIC_KEY
             
             emailjs.send(serviceId, templateId, data, publicKey)
             .then(res => {
